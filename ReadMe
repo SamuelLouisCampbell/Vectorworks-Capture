@@ -1,0 +1,46 @@
+Copyright(c)[2020][Samuel Louis Campbell]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this softwareand associated documentation files(the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and /or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions :
+
+The above copyright noticeand this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Hello!
+
+Thanks for trying out this little utility I wrote. 
+This is for people struggling with their "Fixture Data" output ending up miles off the grid in Capture. 
+
+This is because Capture works in Meters by default and (in the UK) we work in mm. 
+If your VWX document does not use mm, this will produce some hilariously wrong results. 
+If anyone really likes working in inches or barleycorns or whatever, let me know and I'll put a menu with some options in place. 
+
+Of course you can work around this by temporarily setting VWX to use Meters as the default unit, but that doesn't 
+leave much of a challenge for me to program a little work around does it?
+
+This is currently a windows based operation, but none of the code is Windows specific so it should compile fine on mac if anyone cares to try. 
+
+Instructions: 
+  1. Export your "Instrument Data" file from vwx, you must export X Location, Y Location & Z Location, then as many other fields as you need. 
+    do not use "Export in Lightwright 4" format. 
+  
+  2. Open Vectorworks-Capture.exe, input the file path and file name, you can copy this from a right click > properties > location
+  
+  3. Hit return to run the conversion, you should see some output or a message that the file failed to read. If the file failed to read it's
+  probably an issue with the file path. 
+  
+  4. Following a successful conversion, hit any key to quit. You'll find your converted file (labelled as such) in the same folder as the original file. 
+  
+  5. Import to capture the usual way! :-)
